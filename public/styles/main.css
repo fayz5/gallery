@@ -1,0 +1,82 @@
+/* Used Colors:
+  #1A446C - blue grey
+  #689DC1 - light blue
+  #D4E6F4 - very light blue
+  #EEE4B9 - light tan
+  #8D0D19 - burgundy
+  #4CAF50 - green
+*/
+
+html {
+  height: 100%; width: 100%;
+}
+
+body { 
+	height: 100%; width: 100%; margin: 0; padding: 0; border: 0; background: #FFFFFF;
+  	font: 13px/15px Verdana,Arial,Helvetica,sans-serif; 
+}
+
+/*
+Bootstrap
+*/
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A446C;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #8D0D19;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+img { 
+
+	border: none; 
+	border-radius: 5px;
+	transition: all 0.2s ease-out;
+}
+
+img:hover {
+	border: 3px solid #1A446C;
+}
+
+img.fullsize{
+	border: none; 	
+}
+
+table, tr, td, tr { border-collapse: collapse; vertical-align: top; text-align: left;
+  font: 15px/15px Verdana,Arial,Helvetica,sans-serif; 
+}
+
+a { color: #8D0D19;}
+
+#header { height: 70px; text-align: left; background: #1A446C; color: #D4E6F4; }
+#header h1 { padding: 1em; margin: 0;}
+
+#main { min-height: 600px; width: 100%; background: #D4E6F4; padding: 2em;}
+
+#footer { height: 3em; padding: 1em; text-align: center;
+  background: #1A446C;  color: #D4E6F4; }
+
+table.bordered tr th, table.bordered tr td { border: 1px solid #000000; }
