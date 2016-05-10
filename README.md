@@ -9,14 +9,14 @@ I have started this project with focus on only PHP and to cover the following as
 Project structure:
 
 Folders:
-- includes			: contains reusable code such as classes, configuration files, functions
-- public			: contains the website 
+- includes		: contains reusable code such as classes, configuration files, functions
+- public		: contains the website 
 - public/admin		: admin user folder
 - public/layouts	: currently only contain header and footer part of the web page
 - public/images		: uploaded images are moved, kept and served from this folder
 - public/scripts	: contains all the javascript files
 - public/styles		: contains all the css files
-- logs				: user activity logs are recorded and kept in this folder
+- logs			: user activity logs are recorded and kept in this folder
 
 
 Design Decisions & Project Issues:
@@ -25,14 +25,14 @@ Design Decisions & Project Issues:
 
 
 For convenience purposes all the database related configurations are kept in one file which is located in 'includes/config.php'. From there one can change all the parameters required for connecting to and using the database.
-Additionally, I have created several independent functions that simplifies certain tasks (i.e., logging, outputting success or error messages and etc) and stored the in 'includes/functions.php'.
+Additionally, I have created several independent functions that simplify certain tasks (i.e., logging, outputting success or error messages and etc.) and stored the in 'includes/functions.php'.
 
 Project uses object oriented approach, and creates several classes for working with database, query results, sessions and files.
 
 Files containing classes and the description of their purposes:
 - 'includes/database.php' file contains a class that simply a wrapper around mysqli and responsible for opening and closing connections to database, perform queries and etc.
 
-- In this project every record in the database viewed as a database object or in other words instance of the DatabaseObject class ('includes/database_object.php'). User('includes/user.php') and Photograph('includes/photograph.php') classes extend DatabaseObject class and inherit its attributes and methods for performing CRUD operations.
+- In this project every record in the database viewed as a database object or in other words instance of the DatabaseObject class ('includes/database_object.php'). User('includes/user.php') and Photograph('includes/photograph.php') classes extend DatabaseObject class and inherit its attributes and methods for performing CRUD operations on relevant records.
 
 - All the session related functionality is organized in the form of a Session class ('includes/session.php'). 
 
