@@ -21,7 +21,7 @@ Folders:
 
 Design Decisions & Project Issues:
 
-(NOTE THIS PROJECT IS NOT COMPLETED YET AND CONTAINS VERY LITTLE DESIGN EFFORTS! :) )
+(NOTE THIS PROJECT IS NOT COMPLETED AND CONTAINS VERY LITTLE DESIGN EFFORTS! :) )
 
 
 For convenience purposes all the database related configurations are kept in one file which is located in 'includes/config.php'. From there one can change all the parameters required for connecting to and using the database.
